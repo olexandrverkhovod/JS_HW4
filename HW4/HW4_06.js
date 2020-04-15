@@ -5,9 +5,7 @@ function range(a = +prompt('Введите первое число диапаз�
         max = a < b ? b : a,
         buf = '';
     for (let i = min; i <= max; i++) {
-        if (perfectNum(i) == true) {
-            buf += i + ' ';
-        }
+        buf += perfectNum(i) ? i + ' ' : '';
     }
     return buf;
 }
